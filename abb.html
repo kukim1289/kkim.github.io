@@ -30,7 +30,8 @@
 								
 								<body>
 									<h3>Please checkmark if you answer yes</h3>
-									<form>
+									<form action="Diagnostics forABBtrash.html">
+
 										<h2 class = "major">
 											<input type="checkbox" id="Q51" name="Q51">
 											<label for="Q51">Have you ever attended a rave?</label>
@@ -233,7 +234,7 @@
 											<label for="Q100">Have you ever gone clubbing?</label>
 										</h2>
 
-										<button type="Button" id="See Score" onClick="checkboxes();">SEE SCORE</button>
+										<button type="submit" value="Click" onClick="checkboxes();">SEE SCORE</button>
 									</form>
 								</body>
 								
@@ -288,11 +289,12 @@
 							mycomment = " What's up Kevin Nguyen? wow... A full blown ABB. You piece of trash"
 						  }
 						  } 
+					}
+						  sessionStorage.setItem("totalabb", "(" + count + "/62)" + mycomment);
+					   return false; 
 					   }
 					   
-					
-					alert("You scored: " + count + "/50" + mycomment);
-				 }
+				 
 				
 			</script>
 	</body>
