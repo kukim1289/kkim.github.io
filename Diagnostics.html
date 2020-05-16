@@ -30,17 +30,11 @@
 							<article id="overall">
 								<body>
 									
-									<h4><center>Your overall score:</center></h4>
-									<center><h2><span id="totalresult"></span></h2></center><br/><h4><center>In depth ABG Analysis:</center></h4>
-									<h3 class="major"><center>Drug Usage: <span id="totaldrug"></span></center></h3>
-									<h3 class="major"><center>Sex Life: <span id="totalsex"></span></center></h3>	
-									<h3 class="major"><center>Drinking Habits: <span id="totaldrink"></span></center></h3>
-									<h3 class="major"><center>Eating Habits: <span id="totaleatinghabits"></span></center></h3>
-									<h3 class="major"><center>Mannerisms: <span id="totalmannerisms"></span></center></h3>
-									<h3 class="major"><center>Rave Stats: <span id="totalravestats"></span></center></h3>
-									<h3 class="major"><center>Aesthetics: <span id="totallooks"></span></center></h3>
+									
+									<center><h2><span id="totalresult"></span></h2></center><br/>
+									
 								</body>
-								<center><h2><p>close browser to take quiz again!</p></h2></center>
+								
 							</article>
 
 						</div>
@@ -64,17 +58,10 @@
 			<script type="text/javascript">
 			
 				document.getElementById("totalresult").innerHTML=sessionStorage.getItem("total");
-				document.getElementById("totaldrug").innerHTML=sessionStorage.getItem("drugvalue");
-				document.getElementById("totalsex").innerHTML=sessionStorage.getItem("sexvalue");
-				document.getElementById("totaldrink").innerHTML=sessionStorage.getItem("drinkvalue");
-				document.getElementById("totallooks").innerHTML=sessionStorage.getItem("looksvalue");
-				document.getElementById("totalmannerisms").innerHTML=sessionStorage.getItem("mannerismsvalue");
-				document.getElementById("totaleatinghabits").innerHTML=sessionStorage.getItem("eatinghabitsvalue");
-				document.getElementById("totalravestats").innerHTML=sessionStorage.getItem("ravestatsvalue");
+				
 				
 			
-				$window.location.reload();
-				sessionStorage.clear();
+				
 			
 			</script>
 	</body>
