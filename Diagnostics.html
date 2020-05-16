@@ -31,7 +31,7 @@
 								<body>
 									
 									<h4><center>Your overall score:</center></h4>
-									<h3><span id="totalresult"></span></h3><br/><h4><center>In depth ABG Analysis:</center></h4>
+									<center><h2><span id="totalresult"></span></h2></center><br/><h4><center>In depth ABG Analysis:</center></h4>
 									<h3 class="major"><center>Drug Usage: <span id="totaldrug"></span></center></h3>
 									<h3 class="major"><center>Sex Life: <span id="totalsex"></span></center></h3>	
 									<h3 class="major"><center>Drinking Habits: <span id="totaldrink"></span></center></h3>
@@ -40,7 +40,7 @@
 									<h3 class="major"><center>Rave Stats: <span id="totalravestats"></span></center></h3>
 									<h3 class="major"><center>Aesthetics: <span id="totallooks"></span></center></h3>
 								</body>
-								<center><input type="button" value="Go back and edit" onclick="history.back();clearthings();"></center>
+								<center><h2><p>close browser to take quiz again!</p></h2></center>
 							</article>
 
 						</div>
@@ -72,10 +72,9 @@
 				document.getElementById("totaleatinghabits").innerHTML=sessionStorage.getItem("eatinghabitsvalue");
 				document.getElementById("totalravestats").innerHTML=sessionStorage.getItem("ravestatsvalue");
 				
-			function clearthings()
-			{sessionStorage.clear();
-
-			}
+			
+				$window.location.reload();
+				sessionStorage.clear();
 			
 			</script>
 	</body>

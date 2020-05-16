@@ -398,6 +398,9 @@
 							mysexcomment = "Damn... Are you just smashin' and dashin'? You sexual deviant."
 						  
 						  } 
+						  else if(sexcount=0) {
+							  mysexcomment = "Damn... you sound pretty vanilla in bed. You date church boys or something?"
+						  }
 					  	 }
 					   }
 					sessionStorage.setItem("sexvalue",mysexcomment);
@@ -425,6 +428,10 @@
 							mydrugcomment = " Are you still a function human being? After all these drugs?"
 						  
 						  } 
+						  else if(drugcount=0){
+							mydrugcomment = " You're normal. You haven't disappointed your parents"
+
+						  }
 					  	 }
 					   }
 					   sessionStorage.setItem("drugvalue",mydrugcomment)
@@ -447,7 +454,9 @@
 							else if((drinkcount<=6) && (drinkcount>4)) {
 							mydrinkcomment = " You need intervention"
 						  }
-						  
+						  else if(drinkcount=0) {
+							  mydrinkcomment = " Normal Range"
+						  }
 						  
 					  	 }
 					   }
@@ -471,7 +480,10 @@
 							else if((lookscount<=15) && (lookscount>10)) {
 							mylookscomment = " You look completely like an ABG. We know you're just trying to cover up your insecurities."
 						  }
-						  
+						  else if(lookscount=0) {
+							  mylookscomment = " You don't look like an ABG."
+						  }
+						
 						  
 					  	 }
 					   }
@@ -499,6 +511,9 @@
 							mymannerismscomment = " Total ABG. dO yOu lIkE pLaYiNg wItH bOy's hEaRtS?"
 						  
 						  } 
+						  else if(mannerismscount=0){
+							  mymannerismscomment = " You don't act like an ABG at all. Thank GOD"
+						  }
 					  	 }
 					   }
 					sessionStorage.setItem("mannerismsvalue",mymannerismscomment)
@@ -521,6 +536,9 @@
 							else if((eatinghabitscount<=6) && (eatinghabitscount>4)) {
 							myeatinghabitscomment = " Hey Jessica Lee, your ABG diet is not sustainable and we all know that."
 							}
+							else if(eatinghabitscount=0){
+								myeatinghabitscomment = "Your diet is not the ABG way. Congrats."
+							}
 					  	 }
 					   }
 					   sessionStorage.setItem("eatinghabitsvalue",myeatinghabitscomment)
@@ -542,6 +560,9 @@
 						  }
 							else if((ravestatscount<=7) && (ravestatscount>4)) {
 							myravestatscomment = " Your entire life revolves around the beep boop bop music HAHA"
+						  }
+						  if(ravestatscount=0){
+							myravestatscomment = " Lmao... Rookie"
 						  }
 					   }
 					   }
