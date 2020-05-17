@@ -354,23 +354,42 @@
 					for (var i=0; i<inputElems.length; i++) {       
 					   if (inputElems[i].type == "checkbox" && inputElems[i].checked == true){
 						  count++;
-						  if(count<=10) {
+
+						  if(count<=5){
+							mycomment = "You couldn't score higher? Go practice for your piano recital."
+						  }
+						  else if((count<=10) && (count>5)){
 							  mycomment = " Oh my dear child. You are nowhere close to being an ABG."
 						  }
-						  else if((count<=20) && (count>10)) {
+						  else if((count<=15) && (count>10)) {
+							mycomment = " You aren't an ABG. You already knew that before taking this quiz"
+						  }
+						  else if((count<=20) && (count>15)) {
 							mycomment = " I mean... your ABG is kind of showing?... Maybe you haven't gotten your heart broken yet"
 						  }
-							else if((count<=30) && (count>20)) {
+							else if((count<=25) && (count>20)) {
+							mycomment = " Awwww, you've probably been called an ABG a few times. ABG's are confident... but you're just insecure. LMAO"
+						  }
+						  else if((count<=30) && (count>25)) {
 							mycomment = " Stop now for self preservation... Go read some books or something. Oh and also, don't switch your major to 'prenursing'"
 						  }
-						  else if((count<=40) && (count>30)) {
+						  else if((count<=35) && (count>30)) {
+							mycomment = " You're officially in the lower-tier of ABG. You really think your falsies and makeup can hide your insecurities?"
+						  }
+						  else if((count<=40) && (count>35)) {
 							mycomment = " Welp... Here we are... Mid-tier ABG. Go to Church please... You can still save yourself."
 						  }
-						  else if((count<=50) && (count>40)) {
+						  else if((count<=45) && (count>40)) {
+							mycomment = " I hope you hate yourself for being so close to being a total ABG. Just lose a few more braincells and you'll be there!"
+						  }
+						  else if((count<=50) && (count>45)) {
 							mycomment = " Yeah... You're an ABG. Congrats. Get away from me. I'm not trying to get my emotions played with. "
 						  }
-						  else if((count<=62) && (count>50)) {
+						  else if((count<=55) && (count>50)) {
 							mycomment = " Hey Vivian Tran! A full blown ABG. Go back to the streets from which you came"
+						  }
+						  else if((count<=62) && (count>55)) {
+							mycomment = " Go to your Kevin Nguyen. Ride in his dad's Lexus. You made it. 100% abg"
 						  }
 						  } 
 					   }

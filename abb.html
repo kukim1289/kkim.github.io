@@ -235,7 +235,7 @@
 										</h2>
 										<h2 class = "major">
 											<input type="checkbox" id="Q177" name="Q177">
-											<label for="Q177">Have you and your boys got a table?</label>
+											<label for="Q177">Have you and your boys got a table at the club?</label>
 										</h2>
 										<h2 class = "major">
 											<input type="checkbox" id="Q452" name="Q452">
@@ -314,25 +314,42 @@
 					for (var i=0; i<inputElems.length; i++) {       
 					   if (inputElems[i].type == "checkbox" && inputElems[i].checked == true){
 						  count++;
-						  if(count<=10) {
+
+						if(count<=5) {
+							mycomment = " You couldn't score higher? You actually sound incredibly boring."
+						}
+						  else if((count<=10) && (count>5)){
 							  mycomment = " LMAO YOU AIN'T NO ABB. YOU A SIMP LOLOL"
-
 						  }
-						  else if((count<=20) && (count>10)) {
+						  else if((count<=15) && (count>10)){
+							  mycomment = " You aren't an ABB. You already knew that before taking this quiz"
+						  }
+						  else if((count<=20) && (count>15)) {
 							mycomment = " I mean... your ABB is kind of showing?... Maybe you haven't gotten your heart broken yet"
-
 						  }
-						 
-							else if((count<=30) && (count>20)) {
+						 else if((count<=25) && (count>20)) {
+							mycomment = " Awwww, you've probably been called an ABB a few times. ABB's are confident... but you're just insecure. LMAO"
+						 }
+							else if((count<=30) && (count>25)) {
 							mycomment = " Stop now for self preservation... Go read some books or something. Oh and also, don't switch your major to 'business'"
 						  }
-						  else if((count<=40) && (count>30)) {
+						  else if((count<=35) && (count>30)) {
+							mycomment = " You're officially in the lower-tier of ABB. No one wants you at this stage. Not the ABGs nor the regular asian girls."
+							}
+							
+						  else if((count<=40) && (count>35)) {
 							mycomment = " Welp... Here we are... Mid-tier ABB. Go to Church please... Cleanse your filth."
 						  }
 						  else if((count<=45) && (count>40)) {
+							mycomment = " I hope you hate yourself for being so close to being a complete ABB."
+							}
+						  else if((count<=50) && (count>45)) {
 							mycomment = " Yeah... You're an ABB. Congrats fuckboy."
 						  }
-						  else if((count<=62) && (count>50)) {
+						  else if((count<=55) && (count>50)) {
+							mycomment = " We get the point. You go around the city in your Subaru nyoom nyoom car to hurt girls' feelings."
+							}
+						  else if((count<=62) && (count>55)) {
 							mycomment = " What's up Kevin Nguyen? wow... A full blown ABB. You piece of trash"
 						  }
 						  } 
